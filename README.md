@@ -5,7 +5,7 @@ Funcionalidades:
 - Cadastro de Produtos: Registre novos produtos no sistema.
 - Atualização de Estoque: Altere a quantidade disponível de cada item.
 - Consulta de Produtos: Visualize informações detalhadas dos produtos cadastrados.
-- 
+ 
 Tecnologias Utilizadas:
 
 - Java: Linguagem principal utilizada no desenvolvimento.
