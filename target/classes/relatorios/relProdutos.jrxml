@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="01129418-c78d-48c6-ad15-8094b6fa1b62">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="class" class="java.lang.Class">
+		<fieldDescription><![CDATA[class]]></fieldDescription>
+	</field>
+	<field name="descricao" class="java.lang.String">
+		<fieldDescription><![CDATA[descricao]]></fieldDescription>
+	</field>
+	<field name="idProduto" class="java.lang.Integer">
+		<fieldDescription><![CDATA[idProduto]]></fieldDescription>
+	</field>
+	<field name="marca" class="java.lang.String">
+		<fieldDescription><![CDATA[marca]]></fieldDescription>
+	</field>
+	<field name="nome" class="java.lang.String">
+		<fieldDescription><![CDATA[nome]]></fieldDescription>
+	</field>
+	<field name="preco" class="java.lang.Float">
+		<fieldDescription><![CDATA[preco]]></fieldDescription>
+	</field>
+	<field name="qtdEstoque" class="java.lang.Integer">
+		<fieldDescription><![CDATA[qtdEstoque]]></fieldDescription>
+	</field>
+	<field name="unidade" class="java.lang.String">
+		<fieldDescription><![CDATA[unidade]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<image>
+				<reportElement x="16" y="0" width="83" height="79" uuid="06e7ea43-1950-4285-b7dc-8e3dcae9bd58"/>
+				<imageExpression><![CDATA["C:\\Users\\pedro\\Documents\\NetBeansProjects\\trab_ControleEstoque\\src\\main\\resources\\interGraf\\imagens\\cafe-logo.png"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="472" y="0" width="83" height="79" uuid="393ebb3c-34ea-4e4a-a94c-fb0fc3da8e55"/>
+				<imageExpression><![CDATA["C:\\Users\\pedro\\Documents\\NetBeansProjects\\trab_ControleEstoque\\src\\main\\resources\\interGraf\\imagens\\cafe-logo.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="99" y="0" width="373" height="79" uuid="d3a89180-6ab7-4f66-8e25-2f1989bed983"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Bookman Old Style" size="40" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sítio Terra Alta]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="51" splitType="Stretch">
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement x="443" y="20" width="100" height="20" uuid="44ec4e94-3a09-460d-b896-29080adf23dc"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="16" y="20" width="148" height="20" forecolor="#009900" uuid="5e483c1f-143c-430c-8b45-50d62b0987cc"/>
+				<textElement>
+					<font fontName="Bookman Old Style" size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Relatório de Produtos]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="20" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="45" height="20" uuid="28b0a6e5-bc06-4bd0-a325-5e9dad099cc3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="0" width="157" height="20" uuid="2613e06c-b68b-4b01-9588-f714c0896be4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NOME]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="256" y="0" width="125" height="20" uuid="4fb0a9d3-547f-4b8d-b501-ea2d45f2570d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[MARCA]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="202" y="0" width="54" height="20" uuid="1d27fbbc-afc0-47c3-b71f-35b2c792cd18"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNI]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="0" width="83" height="20" uuid="f18c12bb-fa5b-4bbb-a1f7-7695fcc0cf28"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[PREÇO UN.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="381" y="0" width="91" height="20" uuid="03425a33-abd0-4a5e-a6b1-77fdc2496a36"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ESTOQUE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="-1" y="0" width="46" height="20" uuid="3aa2349d-3624-4095-998b-d5abd0ee6709"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{idProduto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="0" width="157" height="20" uuid="36c9e61f-2b90-4fae-b91e-908de8b7ebdf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{nome}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="256" y="0" width="125" height="20" uuid="6fe008f3-b175-4b9e-b2cd-bf7fe26c713e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{marca}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="202" y="0" width="54" height="20" uuid="6a412a06-4273-4629-bab1-44df01bec7d5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{unidade}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="0" width="83" height="20" uuid="99357f16-6a6f-4fdc-8ffd-97b7a77dbd7d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{preco}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="381" y="0" width="91" height="20" uuid="3e86e347-2f7f-449e-bf37-53550aca9010"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{qtdEstoque}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="22" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="20" splitType="Stretch">
+			<textField evaluationTime="Report">
+				<reportElement x="503" y="0" width="40" height="20" uuid="0c6a38b6-b471-423b-8392-1aaf6b4dd60b"/>
+				<textElement verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[" " + $V{PAGE_NUMBER}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="423" y="0" width="80" height="20" uuid="22158241-c3e1-4c59-a811-64d7dcd6d88d"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA["Page "+$V{PAGE_NUMBER}+" of"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>
